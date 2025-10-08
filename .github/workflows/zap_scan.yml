@@ -15,7 +15,7 @@ jobs:
       - name: Run ZAP Baseline Scan
         uses: zaproxy/action-baseline@v0.12.0
         with:
-          target: "https://reservasihotel.infinityfreeapp.com/customer_dashboard.php"
+          target: "https://aje-wiranda.wuaze.com/?i=1"
           cmd_options: "-a -J report_json.json -w report_html.html -m 10 -r report_md.md -x report_xml.xml -c report_csv.csv"
 
       - name: Upload ZAP Reports
